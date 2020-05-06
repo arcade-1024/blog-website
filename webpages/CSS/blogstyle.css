@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+a{
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container{
+  
+  display: grid;
+  height: 250vh;
+  width: 90vw;
+  margin: auto;
+  grid-template-columns: 42vw 42vw;
+  grid-template-rows: repeat(11, 20vh);
+  grid-gap: 20px;
+  grid-template-areas: 
+  "top top"
+  "middle middle"
+  "middle middle"
+  "middle middle"
+  "text text"
+  "text text"
+  "middle-img-1 middle-img-2"
+  "middle-img-1 middle-img-2"
+  "text-2 text-2"
+  "text-2 text-2"
+  "back forward";
+  justify-content: center;
+  border: 2px solid black;
+}
+#title{
+  grid-area: top;
+  font-family: 'Ubuntu', sans-serif;
+  margin: auto;
+  text-align: center;
+  font-size: 4rem;
+}
+.image{
+  grid-area: middle;
+  background-image: url("../../images/HM.jpeg");
+  background-size: cover;
+}
+.text-part{
+  grid-area: text;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  width: 69%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+#image-1{
+  padding: 20px;
+  grid-area: middle-img-1;
+  background-image: url("../../images/abstract.jpeg");
+  background-size: cover;
+}
+#image-2{
+  padding: 20px;
+  grid-area: middle-img-2;
+  background-image: url("../../images/ab.jpg");
+  background-size: cover;
+}
+.text-part-2{
+  grid-area: text-2;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  width: 69%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.Box{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  transition: 0.1 ease;
+}
+.Box:hover{
+  font-size: 3rem;
+}
+#link-1{
+  grid-area: back;
+}
+#link-2{
+  grid-area: forward;
+}
+link-icons{
+  margin: 10px;
+}
